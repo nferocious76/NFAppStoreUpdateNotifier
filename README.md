@@ -37,10 +37,15 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Usage
 
+Import `NFAppStoreUpdateNotifier` into you class.
+
 ```Swift
-
 import NFAppStoreUpdateNotifier
+```
 
+Set your App's `AppStore` ID.
+
+```Swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
  
@@ -52,6 +57,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     return true
 }
 ```
+
+Add or call this to your app's homepage.
 
 ```Swift
 /**
