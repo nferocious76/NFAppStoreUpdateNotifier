@@ -20,6 +20,10 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        startAppVersionCheck()
+    }
+    
+    func startAppVersionCheck() {
         // open loading spinner
         // check if new version is available
         NFAppStoreUpdateNotifier.shared.checkAppVersion { [weak self] (hasNewVersion, error) in
