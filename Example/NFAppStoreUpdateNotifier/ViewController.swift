@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,8 +29,9 @@ class ViewController: UIViewController {
             // check and show error?
             if let error = error {
                 // handle error
+                let message = (error as NSError).userInfo["message"] as? String ?? String(error.localizedDescription)
                 let proceedAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                self.showAlert(withTitle: "Error", message: String(error.localizedDescription), proceedAction: proceedAction)
+                self.showAlert(withTitle: "Error", message: message, proceedAction: proceedAction)
                 return
             }
             
@@ -40,8 +41,9 @@ class ViewController: UIViewController {
                     NFAppStoreUpdateNotifier.shared.openItunesUpdate { [weak self] (finish, error) in
                         guard let self = self else { return }
                         if let error = error {
+                            let message = (error as NSError).userInfo["message"] as? String ?? String(error.localizedDescription)
                             let proceedAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                            self.showAlert(withTitle: "Error", message: String(error.localizedDescription), proceedAction: proceedAction)
+                            self.showAlert(withTitle: "Error", message: message, proceedAction: proceedAction)
                         }
                     }
                 }
