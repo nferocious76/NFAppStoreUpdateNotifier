@@ -1,0 +1,16 @@
+PODS:
+  - NFAppStoreUpdateNotifier (0.1.0)
+
+DEPENDENCIES:
+  - NFAppStoreUpdateNotifier (from `../`)
+
+EXTERNAL SOURCES:
+  NFAppStoreUpdateNotifier:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NFAppStoreUpdateNotifier: 69cb3780a92516107766d6d3e9dc3b2eb5a5db22
+
+PODFILE CHECKSUM: a0d3bc344bd881ae3aa6711c1c456e06b9ef004d
+
+COCOAPODS: 1.9.3

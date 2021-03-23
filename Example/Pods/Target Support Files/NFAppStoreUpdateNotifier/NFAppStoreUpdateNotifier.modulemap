@@ -1,0 +1,6 @@
+framework module NFAppStoreUpdateNotifier {
+  umbrella header "NFAppStoreUpdateNotifier-umbrella.h"
+
+  export *
+  module * { export * }
+}
