@@ -47,9 +47,7 @@ extension NFAppStoreUpdateNotifier {
         
         AF
             .request(itunesURL, method: .get, encoding: JSONEncoding.default)
-            .responseJSON(queue: NFAppStoreUpdateNotifierQueue) { [weak self] (response) in
-                guard let self = self else { return }
-                
+            .responseJSON(queue: NFAppStoreUpdateNotifierQueue) { [unowned self] (response) in
                 if let error = response.error {
                     if self.isLoggingEnabled { debugPrint("NFAppStoreUpdateNotifier:-- Request Error: \(error.localizedDescription)") }
                     callback(false, error)
@@ -81,8 +79,7 @@ extension NFAppStoreUpdateNotifier {
     public func openItunesUpdate(completion: ((_ finish: Bool, _ error: Error?) -> Void)? = nil) {
         let appStoreLink = "\(kNFAppStoreAppSchemeURL)/\(appStoreAppId)"
         if let appStoreURL = URL(string: appStoreLink), UIApplication.shared.canOpenURL(appStoreURL) {
-            UIApplication.shared.open(appStoreURL, options: [:]) { [weak self] finish in
-                guard let self = self else { return }
+            UIApplication.shared.open(appStoreURL, options: [:]) { [unowned self] finish in
                 if self.isLoggingEnabled { debugPrint("NFAppStoreUpdateNotifier:-- App Store has been opened with new version") }
                 completion?(finish, nil)
             }
