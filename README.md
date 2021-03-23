@@ -41,6 +41,19 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 import NFAppStoreUpdateNotifier
 
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    // Override point for customization after application launch.
+ 
+    // set your app store app id
+    NFAppStoreUpdateNotifier.shared.appStoreAppId = "YOUR_APP_STORE_ID"
+    // set to true or leave it if you wish to see event logs. this defaults to true 
+    NFAppStoreUpdateNotifier.shared.isLoggingEnabled = true
+
+    return true
+}
+```
+
+```Swift
 /**
  * in viewWillAppear(animated:)
  * call `startAppVersionCheck()`
