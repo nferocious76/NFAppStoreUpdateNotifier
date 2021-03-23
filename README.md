@@ -1,6 +1,6 @@
 # NFAppStoreUpdateNotifier
 
-[![CI Status](https://img.shields.io/travis/Neil Francis Ramirez Hipona/NFAppStoreUpdateNotifier.svg?style=flat)](https://travis-ci.org/Neil Francis Ramirez Hipona/NFAppStoreUpdateNotifier)
+[![CI Status](https://img.shields.io/travis/nferocious76/NFAppStoreUpdateNotifier.svg?style=flat)](https://travis-ci.org/nferocious76/NFAppStoreUpdateNotifier)
 [![Version](https://img.shields.io/cocoapods/v/NFAppStoreUpdateNotifier.svg?style=flat)](https://cocoapods.org/pods/NFAppStoreUpdateNotifier)
 [![License](https://img.shields.io/cocoapods/l/NFAppStoreUpdateNotifier.svg?style=flat)](https://cocoapods.org/pods/NFAppStoreUpdateNotifier)
 [![Platform](https://img.shields.io/cocoapods/p/NFAppStoreUpdateNotifier.svg?style=flat)](https://cocoapods.org/pods/NFAppStoreUpdateNotifier)

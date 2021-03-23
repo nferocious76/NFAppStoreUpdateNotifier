@@ -1,31 +1,18 @@
-#
-# Be sure to run `pod lib lint NFAppStoreUpdateNotifier.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'NFAppStoreUpdateNotifier'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NFAppStoreUpdateNotifier.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.swift_version    = '5.0'
+  s.summary          = '`NFAppStoreUpdateNotifier` was made to handle the App`s force update checking and redirection to the App`s AppStore page.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+`NFAppStoreUpdateNotifier` is a light weight wrapper that handles fetch, parsing, comparison and validation of `Local or Installed` App version to its AppStore or most updated Live Version. If live updates are present, you can easily redirect users to the AppStore page and made them update your local app before they can use it again.
                        DESC
 
-  s.homepage         = 'https://github.com/Neil Francis Ramirez Hipona/NFAppStoreUpdateNotifier'
+  s.homepage         = 'https://github.com/nferocious76/NFAppStoreUpdateNotifier'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Neil Francis Ramirez Hipona' => 'nferocious76@gmail.com' }
-  s.source           = { :git => 'https://github.com/Neil Francis Ramirez Hipona/NFAppStoreUpdateNotifier.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/nferocious76/NFAppStoreUpdateNotifier.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/nferocious76'
 
   s.ios.deployment_target = '13.0'
