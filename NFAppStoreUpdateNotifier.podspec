@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NFAppStoreUpdateNotifier'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.swift_version    = '5.0'
   s.summary          = '`NFAppStoreUpdateNotifier` was made to handle the App`s force update checking and redirection to the App`s AppStore page.'
 
