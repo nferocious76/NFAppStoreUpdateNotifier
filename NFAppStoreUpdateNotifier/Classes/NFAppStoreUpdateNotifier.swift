@@ -47,7 +47,7 @@ extension NFAppStoreUpdateNotifier {
         
         AF
             .request(itunesURL, method: .get, encoding: JSONEncoding.default)
-            .responseJSON { [weak self] (response) in
+            .responseJSON(queue: NFAppStoreUpdateNotifierQueue) { [weak self] (response) in
                 guard let self = self else { return }
                 
                 if let error = response.error {

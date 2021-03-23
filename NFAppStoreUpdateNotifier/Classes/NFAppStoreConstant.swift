@@ -7,6 +7,8 @@
 
 import Foundation
 
+public let NFAppStoreUpdateNotifierQueue = DispatchQueue(label: "com.NFAppStoreUpdateNotifierQueue.main-thread (background)", qos: .background, attributes: .concurrent, autoreleaseFrequency: .inherit, target: .main)
+
 public let kNFAppStoreBundleID = "CFBundleIdentifier"
 public let kNFAppStoreVersionString = "CFBundleShortVersionString"
 
