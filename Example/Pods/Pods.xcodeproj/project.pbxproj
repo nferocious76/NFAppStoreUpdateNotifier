@@ -7,77 +7,187 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12CB3DEBD690807F9F1755279AC7F0CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		204DCC1DAC4A46225D33A5B0BE1D0DE0 /* Pods-NFAppStoreUpdateNotifier_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C580DA1506A2849CC1723775F9E0A4B /* Pods-NFAppStoreUpdateNotifier_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA5CE21C3AA080DF88C6A7C03F26933 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BAD52FFB8C232659E1D58E18FB6728 /* ReplaceMe.swift */; };
-		3F67FCA9645D62F6290446EB788FF292 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */; };
+		08BBC4122609A91E00FA718D /* NFAppStoreUpdateNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BBC4112609A91E00FA718D /* NFAppStoreUpdateNotifier.swift */; };
+		08BBC4182609A99400FA718D /* NFAppStoreConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BBC4172609A99400FA718D /* NFAppStoreConstant.swift */; };
+		0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBFC4256A48F45E26B860D38479E52 /* Combine.swift */; };
+		0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */; };
+		1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B2325F6647FEE3C9209201FF5D4C2 /* AFError.swift */; };
+		12CB3DEBD690807F9F1755279AC7F0CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F401E181BEA002337E464DED414F440 /* Foundation.framework */; };
+		19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */; };
+		212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A51515830AB9FE94E01DF6F48146153 /* StringEncoding+Alamofire.swift */; };
+		218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D45A2AF061C99B2355F19EC47243D9 /* Protected.swift */; };
+		244AE9AA9999DEF33DC65F42BB050040 /* Pods-NFAppStoreUpdateNotifier_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C580DA1506A2849CC1723775F9E0A4B /* Pods-NFAppStoreUpdateNotifier_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABD9F54297FF27309F1F8A34F99417C /* DispatchQueue+Alamofire.swift */; };
+		381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72312136F76CCB5AC50BCDD37ED4A2 /* SessionDelegate.swift */; };
+		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */; };
+		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */; };
+		4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26220434118FCFC30E4850800AC3068 /* ParameterEncoder.swift */; };
+		520089B84450628C3C1843569CD101DC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF301302A2A77E95697F2B5692FA5E /* Alamofire.framework */; };
 		5E4C2104298DAC83D0492A027E3206DC /* Pods-NFAppStoreUpdateNotifier_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1CB1CAD3C419D98AE245CFE5D559CC4 /* Pods-NFAppStoreUpdateNotifier_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61CD90B880FD793BA4025450F99085AB /* Pods-NFAppStoreUpdateNotifier_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BABDCF3AF53607180BB274BED65FFF /* Pods-NFAppStoreUpdateNotifier_Example-dummy.m */; };
-		679B98539C926210527A137D48493435 /* NFAppStoreUpdateNotifier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3A2A483FB41E6EB0B929F1A3662F84 /* NFAppStoreUpdateNotifier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC45C560942C5BCAB401419728808D3 /* EventMonitor.swift */; };
+		666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB40D0E4136A2EBA646F9A9D0DA652 /* RedirectHandler.swift */; };
+		66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673CB7AF23C7E1475678C8CCC286CF41 /* Result+Alamofire.swift */; };
+		6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591D5844289F02F52985F30FFDA6BB5 /* Session.swift */; };
+		6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B8687B00F57762F34D3282826817C5 /* RequestTaskMap.swift */; };
+		6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */; };
+		72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43DFB0A067881554C0CF2E83093E1D6 /* AlamofireExtended.swift */; };
+		7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 845043F6DD76EF451A61A8C4EEB3BF6C /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		810A4C59E20EBBD530D7F53C83BB7CFF /* Pods-NFAppStoreUpdateNotifier_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BABDCF3AF53607180BB274BED65FFF /* Pods-NFAppStoreUpdateNotifier_Example-dummy.m */; };
+		899DD12F30824097FE55A138ED8253AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F401E181BEA002337E464DED414F440 /* Foundation.framework */; };
+		8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EBC286A9BAE2611EFC71F7C9FB60B8 /* Notifications.swift */; };
 		8C97C934250999193DCEF20AF71BD59E /* Pods-NFAppStoreUpdateNotifier_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E66389DF4AB1B38EAC6F27BDD5278961 /* Pods-NFAppStoreUpdateNotifier_Tests-dummy.m */; };
-		AC6638D15AF371FBB4334F1F155528AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D9C04BE7E65B050CDD43D0D00ABAAC45 /* NFAppStoreUpdateNotifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A29E5140D790B7C5CB554A179C4CBD /* NFAppStoreUpdateNotifier-dummy.m */; };
+		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */; };
+		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */; };
+		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */; };
+		9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44EFF4AE1CC95C361F6A007EDBD6E7 /* RetryPolicy.swift */; };
+		A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BD7B93FEA70BDFD057550D07FA7961 /* CFNetwork.framework */; };
+		ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D233027C8491F55B2473FCDA12389 /* CachedResponseHandler.swift */; };
+		B0F4DEA6457731BA0E56DBC854E9D291 /* NFAppStoreUpdateNotifier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3A2A483FB41E6EB0B929F1A3662F84 /* NFAppStoreUpdateNotifier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2B77F50C8E86FDD27C5A573013C07 /* Response.swift */; };
+		C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF4837C47DFB74B73C8B82A591E94C /* Alamofire.swift */; };
+		C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC11D87B8E53578044EA373E7DE6642 /* Alamofire-dummy.m */; };
+		D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BB5063650D66E661FD979273F90078 /* MultipartUpload.swift */; };
+		D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */; };
+		D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F2B90B6F80D8F30747B3E178F5528F /* URLEncodedFormEncoder.swift */; };
+		D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062C7841BFC1EEBD8A094A3CA60AEADA /* URLRequest+Alamofire.swift */; };
+		DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA36ADD8B0E94CE139C28448821E13 /* AuthenticationInterceptor.swift */; };
+		EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B14ACFFB6A91762B582B46A3466A3F /* Request.swift */; };
+		EFCD836F9D0963B23518AAAB8CF96392 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F401E181BEA002337E464DED414F440 /* Foundation.framework */; };
+		F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20097F794E1A1791AB97EBE230264E61 /* Validation.swift */; };
+		F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F401E181BEA002337E464DED414F440 /* Foundation.framework */; };
+		F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */; };
+		F97C827DBE438521187B30BA3CA3E537 /* NFAppStoreUpdateNotifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A29E5140D790B7C5CB554A179C4CBD /* NFAppStoreUpdateNotifier-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0F5D5B335DB90A39143CE9E319C1A5CB /* PBXContainerItemProxy */ = {
+		3D6E25DA2E1FB8365775676BD112140A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		8D08EE1E64F1183DD3A39044981B9DAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CFFD100D4975E7DE0CCB3F8F53E80DB8;
 			remoteInfo = NFAppStoreUpdateNotifier;
 		};
-		79EEFD4D9403B9C4AEB107DE0ED0FFC0 /* PBXContainerItemProxy */ = {
+		AC3C9BAFB656A3C13C20075626CF92B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1DAE5F6E592F623B4783A763D4BA8A13;
 			remoteInfo = "Pods-NFAppStoreUpdateNotifier_Example";
 		};
+		FFBED0D7932B5DFC1670A8D49F867CC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05BAB278AE1DD2FE446A29E18C1AED21 /* NFAppStoreUpdateNotifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NFAppStoreUpdateNotifier.debug.xcconfig; sourceTree = "<group>"; };
+		062C7841BFC1EEBD8A094A3CA60AEADA /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		08BBC4112609A91E00FA718D /* NFAppStoreUpdateNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NFAppStoreUpdateNotifier.swift; path = NFAppStoreUpdateNotifier/Classes/NFAppStoreUpdateNotifier.swift; sourceTree = "<group>"; };
+		08BBC4172609A99400FA718D /* NFAppStoreConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NFAppStoreConstant.swift; path = NFAppStoreUpdateNotifier/Classes/NFAppStoreConstant.swift; sourceTree = "<group>"; };
+		0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		0EC45C560942C5BCAB401419728808D3 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		19D0DE54B892802BD0020FC22ED9340A /* Pods-NFAppStoreUpdateNotifier_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NFAppStoreUpdateNotifier_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1C1F8AED10F910C4BFA9273EA4CFBE44 /* Pods-NFAppStoreUpdateNotifier_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NFAppStoreUpdateNotifier_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		32BAD52FFB8C232659E1D58E18FB6728 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = NFAppStoreUpdateNotifier/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		20097F794E1A1791AB97EBE230264E61 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		29EBC286A9BAE2611EFC71F7C9FB60B8 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		2B0F05A3DBDE8E8AD6A8511F035D63D3 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		32BD7B93FEA70BDFD057550D07FA7961 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		349B2325F6647FEE3C9209201FF5D4C2 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		35B476F83188A6166CCE667197484CBD /* Pods-NFAppStoreUpdateNotifier_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NFAppStoreUpdateNotifier_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3F401E181BEA002337E464DED414F440 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		4591D5844289F02F52985F30FFDA6BB5 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		4ABD9F54297FF27309F1F8A34F99417C /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		4BB244144493B9E11CAD2FA7587D570D /* Pods-NFAppStoreUpdateNotifier_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NFAppStoreUpdateNotifier_Tests.modulemap"; sourceTree = "<group>"; };
+		4D3E0E1E34DD4394C6023B622C262222 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
 		4D6DAE96B8931128DA015832D241E1CB /* NFAppStoreUpdateNotifier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NFAppStoreUpdateNotifier.modulemap; sourceTree = "<group>"; };
+		51BB5063650D66E661FD979273F90078 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		51D45A2AF061C99B2355F19EC47243D9 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		5A51515830AB9FE94E01DF6F48146153 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		5BDD7786FD78E7AAE9CD5199B57CC26B /* Pods_NFAppStoreUpdateNotifier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFAppStoreUpdateNotifier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BEF4837C47DFB74B73C8B82A591E94C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F2B90B6F80D8F30747B3E178F5528F /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		673CB7AF23C7E1475678C8CCC286CF41 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		678C22EACBD2E2D30AB51163DD135CC0 /* Pods-NFAppStoreUpdateNotifier_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NFAppStoreUpdateNotifier_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		705B48A29E54D3D80D67B9E1B9FE4167 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		79BFAE4F0928F95479DE70C637654FC5 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		79EB40D0E4136A2EBA646F9A9D0DA652 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		7C580DA1506A2849CC1723775F9E0A4B /* Pods-NFAppStoreUpdateNotifier_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NFAppStoreUpdateNotifier_Example-umbrella.h"; sourceTree = "<group>"; };
+		845043F6DD76EF451A61A8C4EEB3BF6C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		84B14ACFFB6A91762B582B46A3466A3F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		9284E0C26627A66386EC6F3550ED0B5A /* NFAppStoreUpdateNotifier.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NFAppStoreUpdateNotifier.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		99539EB91DA543A618908912DBC78C53 /* Pods-NFAppStoreUpdateNotifier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NFAppStoreUpdateNotifier_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		9C44EFF4AE1CC95C361F6A007EDBD6E7 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D9743AAE02BFEECDC408C0D0ED4A4F1 /* Pods-NFAppStoreUpdateNotifier_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NFAppStoreUpdateNotifier_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A1975714E4DB5589D19E4C24C845E13D /* Pods-NFAppStoreUpdateNotifier_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NFAppStoreUpdateNotifier_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A4153404C4C0A47E701390CEDAB4A093 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		A6F2B77F50C8E86FDD27C5A573013C07 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		B0EBFC4256A48F45E26B860D38479E52 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
 		B1F95D7AE9474F80C9D4A41FD3DB65EB /* NFAppStoreUpdateNotifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NFAppStoreUpdateNotifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B8687B00F57762F34D3282826817C5 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		B5DA36ADD8B0E94CE139C28448821E13 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
 		B8EC17B0911797208CB0B0257F67B819 /* NFAppStoreUpdateNotifier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NFAppStoreUpdateNotifier-prefix.pch"; sourceTree = "<group>"; };
 		BC6244DB41696B72843329A43C3E5CFA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		C1188243320B491ABFD5531E14070795 /* Pods-NFAppStoreUpdateNotifier_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NFAppStoreUpdateNotifier_Example.modulemap"; sourceTree = "<group>"; };
 		CD3A2A483FB41E6EB0B929F1A3662F84 /* NFAppStoreUpdateNotifier-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NFAppStoreUpdateNotifier-umbrella.h"; sourceTree = "<group>"; };
 		CDD9B2988C8DBFB29E92B809AB1D3A95 /* Pods-NFAppStoreUpdateNotifier_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NFAppStoreUpdateNotifier_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CE8EE1B99E97C1B576AA160EE8BA94B0 /* Pods_NFAppStoreUpdateNotifier_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFAppStoreUpdateNotifier_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0FF301302A2A77E95697F2B5692FA5E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26220434118FCFC30E4850800AC3068 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
 		D2A29E5140D790B7C5CB554A179C4CBD /* NFAppStoreUpdateNotifier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NFAppStoreUpdateNotifier-dummy.m"; sourceTree = "<group>"; };
 		D5BABDCF3AF53607180BB274BED65FFF /* Pods-NFAppStoreUpdateNotifier_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NFAppStoreUpdateNotifier_Example-dummy.m"; sourceTree = "<group>"; };
 		D66D93DFB3C6BADE48660E197E6DC0A8 /* NFAppStoreUpdateNotifier-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NFAppStoreUpdateNotifier-Info.plist"; sourceTree = "<group>"; };
 		D7F961B00BAD0C203D248B69A7208EFB /* NFAppStoreUpdateNotifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NFAppStoreUpdateNotifier.release.xcconfig; sourceTree = "<group>"; };
+		DA4D233027C8491F55B2473FCDA12389 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		DFC11D87B8E53578044EA373E7DE6642 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		E66389DF4AB1B38EAC6F27BDD5278961 /* Pods-NFAppStoreUpdateNotifier_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NFAppStoreUpdateNotifier_Tests-dummy.m"; sourceTree = "<group>"; };
 		F1CB1CAD3C419D98AE245CFE5D559CC4 /* Pods-NFAppStoreUpdateNotifier_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NFAppStoreUpdateNotifier_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F343314CC433F3AFC7015F6A8D376578 /* Pods-NFAppStoreUpdateNotifier_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NFAppStoreUpdateNotifier_Example-Info.plist"; sourceTree = "<group>"; };
+		F43DFB0A067881554C0CF2E83093E1D6 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		F5B39067AD252BEB9F8293534B7D66FA /* Pods-NFAppStoreUpdateNotifier_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NFAppStoreUpdateNotifier_Tests-Info.plist"; sourceTree = "<group>"; };
+		F71BBCEF1586B8C48F6C090283FD70AA /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		F815A6A3D0F3CD9FD099794B33D9E735 /* Pods-NFAppStoreUpdateNotifier_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NFAppStoreUpdateNotifier_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		FF72312136F76CCB5AC50BCDD37ED4A2 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AF6E66A011AA9B5324D377C93F0843B /* Frameworks */ = {
+		3716BC8C0C4DA6209472B4475954B571 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F67FCA9645D62F6290446EB788FF292 /* Foundation.framework in Frameworks */,
+				EFCD836F9D0963B23518AAAB8CF96392 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DC1FF5E0ED3AD94809A503E6CFCDF9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520089B84450628C3C1843569CD101DC /* Alamofire.framework in Frameworks */,
+				899DD12F30824097FE55A138ED8253AD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,11 +199,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E02210286E8F47B84F41EF01EEE851FB /* Frameworks */ = {
+		9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC6638D15AF371FBB4334F1F155528AA /* Foundation.framework in Frameworks */,
+				A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */,
+				F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,10 +238,31 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		34176D5FCF80868BABE20CA4EAF840E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				B1F95D7AE9474F80C9D4A41FD3DB65EB /* NFAppStoreUpdateNotifier.framework */,
+				CE8EE1B99E97C1B576AA160EE8BA94B0 /* Pods_NFAppStoreUpdateNotifier_Example.framework */,
+				5BDD7786FD78E7AAE9CD5199B57CC26B /* Pods_NFAppStoreUpdateNotifier_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BF62439A2FE1F58E9E704216CF2CE03 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				32BD7B93FEA70BDFD057550D07FA7961 /* CFNetwork.framework */,
+				3F401E181BEA002337E464DED414F440 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		58E7EF7B982B3B0EB73DF85859CD9E2D /* NFAppStoreUpdateNotifier */ = {
 			isa = PBXGroup;
 			children = (
-				32BAD52FFB8C232659E1D58E18FB6728 /* ReplaceMe.swift */,
+				08BBC4172609A99400FA718D /* NFAppStoreConstant.swift */,
+				08BBC4112609A91E00FA718D /* NFAppStoreUpdateNotifier.swift */,
 				013FE4ABC580AF109F490303ED3AFE21 /* Pod */,
 				F39638A36249F6AE7B6756CB06A770D2 /* Support Files */,
 			);
@@ -138,14 +270,71 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		74A6DC9AE1BA9F77AE9FBC793F84397A /* Products */ = {
+		5A6F22EC0F5633257B85B6E660A2165F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B1F95D7AE9474F80C9D4A41FD3DB65EB /* NFAppStoreUpdateNotifier.framework */,
-				CE8EE1B99E97C1B576AA160EE8BA94B0 /* Pods_NFAppStoreUpdateNotifier_Example.framework */,
-				5BDD7786FD78E7AAE9CD5199B57CC26B /* Pods_NFAppStoreUpdateNotifier_Tests.framework */,
+				79BFAE4F0928F95479DE70C637654FC5 /* Alamofire.modulemap */,
+				DFC11D87B8E53578044EA373E7DE6642 /* Alamofire-dummy.m */,
+				F71BBCEF1586B8C48F6C090283FD70AA /* Alamofire-Info.plist */,
+				2B0F05A3DBDE8E8AD6A8511F035D63D3 /* Alamofire-prefix.pch */,
+				845043F6DD76EF451A61A8C4EEB3BF6C /* Alamofire-umbrella.h */,
+				4D3E0E1E34DD4394C6023B622C262222 /* Alamofire.debug.xcconfig */,
+				A4153404C4C0A47E701390CEDAB4A093 /* Alamofire.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		6FF97FACCA57A9A7BC9912B94BE14E47 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				349B2325F6647FEE3C9209201FF5D4C2 /* AFError.swift */,
+				5BEF4837C47DFB74B73C8B82A591E94C /* Alamofire.swift */,
+				F43DFB0A067881554C0CF2E83093E1D6 /* AlamofireExtended.swift */,
+				B5DA36ADD8B0E94CE139C28448821E13 /* AuthenticationInterceptor.swift */,
+				DA4D233027C8491F55B2473FCDA12389 /* CachedResponseHandler.swift */,
+				B0EBFC4256A48F45E26B860D38479E52 /* Combine.swift */,
+				4ABD9F54297FF27309F1F8A34F99417C /* DispatchQueue+Alamofire.swift */,
+				0EC45C560942C5BCAB401419728808D3 /* EventMonitor.swift */,
+				333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */,
+				4388F96485F322CF010F9CA6AF089C46 /* HTTPMethod.swift */,
+				0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */,
+				51BB5063650D66E661FD979273F90078 /* MultipartUpload.swift */,
+				401A0C3C3516540407583753D10DEB2B /* NetworkReachabilityManager.swift */,
+				29EBC286A9BAE2611EFC71F7C9FB60B8 /* Notifications.swift */,
+				876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */,
+				D26220434118FCFC30E4850800AC3068 /* ParameterEncoder.swift */,
+				998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */,
+				51D45A2AF061C99B2355F19EC47243D9 /* Protected.swift */,
+				79EB40D0E4136A2EBA646F9A9D0DA652 /* RedirectHandler.swift */,
+				84B14ACFFB6A91762B582B46A3466A3F /* Request.swift */,
+				9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */,
+				B4B8687B00F57762F34D3282826817C5 /* RequestTaskMap.swift */,
+				A6F2B77F50C8E86FDD27C5A573013C07 /* Response.swift */,
+				7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */,
+				673CB7AF23C7E1475678C8CCC286CF41 /* Result+Alamofire.swift */,
+				9C44EFF4AE1CC95C361F6A007EDBD6E7 /* RetryPolicy.swift */,
+				FA24B13480173106997D3F6538CDE3CD /* ServerTrustEvaluation.swift */,
+				4591D5844289F02F52985F30FFDA6BB5 /* Session.swift */,
+				FF72312136F76CCB5AC50BCDD37ED4A2 /* SessionDelegate.swift */,
+				5A51515830AB9FE94E01DF6F48146153 /* StringEncoding+Alamofire.swift */,
+				BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */,
+				61F2B90B6F80D8F30747B3E178F5528F /* URLEncodedFormEncoder.swift */,
+				062C7841BFC1EEBD8A094A3CA60AEADA /* URLRequest+Alamofire.swift */,
+				970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */,
+				20097F794E1A1791AB97EBE230264E61 /* Validation.swift */,
+				5A6F22EC0F5633257B85B6E660A2165F /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		8B7A79262BFE6D94671D449787F3AAA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0FF301302A2A77E95697F2B5692FA5E /* Alamofire.framework */,
+				4BF62439A2FE1F58E9E704216CF2CE03 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8BEE18D292F1ABD4CC820AABA5F0739E /* Pods-NFAppStoreUpdateNotifier_Tests */ = {
@@ -164,31 +353,24 @@
 			path = "Target Support Files/Pods-NFAppStoreUpdateNotifier_Tests";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				309FC98EF14D03BA95B5D4E9E52A598A /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				74A6DC9AE1BA9F77AE9FBC793F84397A /* Products */,
+				8B7A79262BFE6D94671D449787F3AAA9 /* Frameworks */,
+				D6535AE6278B88B90F3A376D1347504F /* Pods */,
+				34176D5FCF80868BABE20CA4EAF840E2 /* Products */,
 				1F0829B7449EEF19B25A80A15C268B56 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D6535AE6278B88B90F3A376D1347504F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				6FF97FACCA57A9A7BC9912B94BE14E47 /* Alamofire */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E8184C8385FAEEF6F4B291D489062528 /* Pods-NFAppStoreUpdateNotifier_Example */ = {
@@ -234,19 +416,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7F4F6D906C199121A4C664F112898C3 /* Headers */ = {
+		45B480060A13BB210BC58E6A5A8AC163 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				679B98539C926210527A137D48493435 /* NFAppStoreUpdateNotifier-umbrella.h in Headers */,
+				244AE9AA9999DEF33DC65F42BB050040 /* Pods-NFAppStoreUpdateNotifier_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B08DF9F7424A140DE171B99875F3681E /* Headers */ = {
+		7350E099041F0EB3A9DD378316D9ECD2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				204DCC1DAC4A46225D33A5B0BE1D0DE0 /* Pods-NFAppStoreUpdateNotifier_Example-umbrella.h in Headers */,
+				B0F4DEA6457731BA0E56DBC854E9D291 /* NFAppStoreUpdateNotifier-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8070B01910C64B9AFD0DB550EDE38D6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,17 +445,18 @@
 /* Begin PBXNativeTarget section */
 		1DAE5F6E592F623B4783A763D4BA8A13 /* Pods-NFAppStoreUpdateNotifier_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6CA48F95D1BBD5B02F12D9CF6F4F8AD /* Build configuration list for PBXNativeTarget "Pods-NFAppStoreUpdateNotifier_Example" */;
+			buildConfigurationList = AB63A7B48F614E80A550691C0847A61D /* Build configuration list for PBXNativeTarget "Pods-NFAppStoreUpdateNotifier_Example" */;
 			buildPhases = (
-				B08DF9F7424A140DE171B99875F3681E /* Headers */,
-				7D7FC2E6151957AF5AD653001557EFD2 /* Sources */,
-				E02210286E8F47B84F41EF01EEE851FB /* Frameworks */,
-				25068A70FDDAF600F4AA3D8A855D4246 /* Resources */,
+				45B480060A13BB210BC58E6A5A8AC163 /* Headers */,
+				8A6CE43D5ABC20010BB777A7AC699EDE /* Sources */,
+				3716BC8C0C4DA6209472B4475954B571 /* Frameworks */,
+				C1098CEDDB96A0F54D26340587E07532 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D76018ADBBE0B14A38CEB7010B8DF256 /* PBXTargetDependency */,
+				70EB91DF3333C00B89288094D6EF1B61 /* PBXTargetDependency */,
+				0BC586846B1BFD4D06D9F8127974CBE9 /* PBXTargetDependency */,
 			);
 			name = "Pods-NFAppStoreUpdateNotifier_Example";
 			productName = "Pods-NFAppStoreUpdateNotifier_Example";
@@ -284,7 +475,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				709FFF1C8B3A7B27238E3D57CB56D032 /* PBXTargetDependency */,
+				9A98B4E3FB4C9BCEA5992AC38CDAE638 /* PBXTargetDependency */,
 			);
 			name = "Pods-NFAppStoreUpdateNotifier_Tests";
 			productName = "Pods-NFAppStoreUpdateNotifier_Tests";
@@ -293,20 +484,39 @@
 		};
 		CFFD100D4975E7DE0CCB3F8F53E80DB8 /* NFAppStoreUpdateNotifier */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D428A5A16EC068BD25D3BCFC9F4447B1 /* Build configuration list for PBXNativeTarget "NFAppStoreUpdateNotifier" */;
+			buildConfigurationList = 2EC648173E50E3BF345DDF3E3E415159 /* Build configuration list for PBXNativeTarget "NFAppStoreUpdateNotifier" */;
 			buildPhases = (
-				A7F4F6D906C199121A4C664F112898C3 /* Headers */,
-				FD33ABAA7AE9DEAFE4A1DE3966CDE3A3 /* Sources */,
-				1AF6E66A011AA9B5324D377C93F0843B /* Frameworks */,
-				E70D62289C3DFBE1A0A9255EF5E6AA97 /* Resources */,
+				7350E099041F0EB3A9DD378316D9ECD2 /* Headers */,
+				F38D89FFA355EBABC553029B61123265 /* Sources */,
+				5DC1FF5E0ED3AD94809A503E6CFCDF9A /* Frameworks */,
+				1B7B5465E401C29E44B6FA6648690647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B2AA92941DA120CA8D4B6763358B45E /* PBXTargetDependency */,
+			);
+			name = NFAppStoreUpdateNotifier;
+			productName = NFAppStoreUpdateNotifier;
+			productReference = B1F95D7AE9474F80C9D4A41FD3DB65EB /* NFAppStoreUpdateNotifier.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				8070B01910C64B9AFD0DB550EDE38D6B /* Headers */,
+				2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */,
+				9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */,
+				9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NFAppStoreUpdateNotifier;
-			productName = NFAppStoreUpdateNotifier;
-			productReference = B1F95D7AE9474F80C9D4A41FD3DB65EB /* NFAppStoreUpdateNotifier.framework */;
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -327,10 +537,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 74A6DC9AE1BA9F77AE9FBC793F84397A /* Products */;
+			productRefGroup = 34176D5FCF80868BABE20CA4EAF840E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				CFFD100D4975E7DE0CCB3F8F53E80DB8 /* NFAppStoreUpdateNotifier */,
 				1DAE5F6E592F623B4783A763D4BA8A13 /* Pods-NFAppStoreUpdateNotifier_Example */,
 				2A0E31264649D68F958BDC9309798134 /* Pods-NFAppStoreUpdateNotifier_Tests */,
@@ -339,7 +550,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		25068A70FDDAF600F4AA3D8A855D4246 /* Resources */ = {
+		1B7B5465E401C29E44B6FA6648690647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1098CEDDB96A0F54D26340587E07532 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,13 +572,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E0DBC5B168D1ED928C1D9AC7C44A9ED5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E70D62289C3DFBE1A0A9255EF5E6AA97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,74 +589,97 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D7FC2E6151957AF5AD653001557EFD2 /* Sources */ = {
+		2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61CD90B880FD793BA4025450F99085AB /* Pods-NFAppStoreUpdateNotifier_Example-dummy.m in Sources */,
+				1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */,
+				C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */,
+				C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */,
+				72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */,
+				DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */,
+				ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */,
+				0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */,
+				27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */,
+				6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */,
+				91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */,
+				013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */,
+				45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */,
+				D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */,
+				19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */,
+				8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */,
+				0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */,
+				4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */,
+				D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */,
+				218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */,
+				666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */,
+				EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */,
+				6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */,
+				6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */,
+				C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */,
+				911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */,
+				66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */,
+				9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */,
+				47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */,
+				6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */,
+				381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */,
+				212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */,
+				9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */,
+				D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */,
+				F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD33ABAA7AE9DEAFE4A1DE3966CDE3A3 /* Sources */ = {
+		8A6CE43D5ABC20010BB777A7AC699EDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9C04BE7E65B050CDD43D0D00ABAAC45 /* NFAppStoreUpdateNotifier-dummy.m in Sources */,
-				2FA5CE21C3AA080DF88C6A7C03F26933 /* ReplaceMe.swift in Sources */,
+				810A4C59E20EBBD530D7F53C83BB7CFF /* Pods-NFAppStoreUpdateNotifier_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38D89FFA355EBABC553029B61123265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97C827DBE438521187B30BA3CA3E537 /* NFAppStoreUpdateNotifier-dummy.m in Sources */,
+				08BBC4122609A91E00FA718D /* NFAppStoreUpdateNotifier.swift in Sources */,
+				08BBC4182609A99400FA718D /* NFAppStoreConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		709FFF1C8B3A7B27238E3D57CB56D032 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-NFAppStoreUpdateNotifier_Example";
-			target = 1DAE5F6E592F623B4783A763D4BA8A13 /* Pods-NFAppStoreUpdateNotifier_Example */;
-			targetProxy = 79EEFD4D9403B9C4AEB107DE0ED0FFC0 /* PBXContainerItemProxy */;
-		};
-		D76018ADBBE0B14A38CEB7010B8DF256 /* PBXTargetDependency */ = {
+		0BC586846B1BFD4D06D9F8127974CBE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NFAppStoreUpdateNotifier;
 			target = CFFD100D4975E7DE0CCB3F8F53E80DB8 /* NFAppStoreUpdateNotifier */;
-			targetProxy = 0F5D5B335DB90A39143CE9E319C1A5CB /* PBXContainerItemProxy */;
+			targetProxy = 8D08EE1E64F1183DD3A39044981B9DAE /* PBXContainerItemProxy */;
+		};
+		3B2AA92941DA120CA8D4B6763358B45E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 3D6E25DA2E1FB8365775676BD112140A /* PBXContainerItemProxy */;
+		};
+		70EB91DF3333C00B89288094D6EF1B61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = FFBED0D7932B5DFC1670A8D49F867CC7 /* PBXContainerItemProxy */;
+		};
+		9A98B4E3FB4C9BCEA5992AC38CDAE638 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NFAppStoreUpdateNotifier_Example";
+			target = 1DAE5F6E592F623B4783A763D4BA8A13 /* Pods-NFAppStoreUpdateNotifier_Example */;
+			targetProxy = AC3C9BAFB656A3C13C20075626CF92B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06C3E6052F60C1A49270AFFF38D5AC3F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7F961B00BAD0C203D248B69A7208EFB /* NFAppStoreUpdateNotifier.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NFAppStoreUpdateNotifier/NFAppStoreUpdateNotifier-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NFAppStoreUpdateNotifier/NFAppStoreUpdateNotifier-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NFAppStoreUpdateNotifier/NFAppStoreUpdateNotifier.modulemap";
-				PRODUCT_MODULE_NAME = NFAppStoreUpdateNotifier;
-				PRODUCT_NAME = NFAppStoreUpdateNotifier;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -569,7 +810,40 @@
 			};
 			name = Release;
 		};
-		58CDFC138846144B5C0595C75746B8AC /* Release */ = {
+		2A25201E94E80EC7F4E0516B59ABBBE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D3E0E1E34DD4394C6023B622C262222 /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		663C3BCC65ACB035A42940100E4E955D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1975714E4DB5589D19E4C24C845E13D /* Pods-NFAppStoreUpdateNotifier_Example.release.xcconfig */;
 			buildSettings = {
@@ -605,7 +879,40 @@
 			};
 			name = Release;
 		};
-		896A7655821D5461B64638FC95ACDE7A /* Debug */ = {
+		770B16887B802CED46CB8CAA862027DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05BAB278AE1DD2FE446A29E18C1AED21 /* NFAppStoreUpdateNotifier.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NFAppStoreUpdateNotifier/NFAppStoreUpdateNotifier-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NFAppStoreUpdateNotifier/NFAppStoreUpdateNotifier-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NFAppStoreUpdateNotifier/NFAppStoreUpdateNotifier.modulemap";
+				PRODUCT_MODULE_NAME = NFAppStoreUpdateNotifier;
+				PRODUCT_NAME = NFAppStoreUpdateNotifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C4395E305A28F373385FAD7BA8ADBE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 678C22EACBD2E2D30AB51163DD135CC0 /* Pods-NFAppStoreUpdateNotifier_Example.debug.xcconfig */;
 			buildSettings = {
@@ -640,11 +947,12 @@
 			};
 			name = Debug;
 		};
-		8BCDC522DA1C4B2736222269EDAEB5BD /* Debug */ = {
+		A8C6B36C67BE4EB09BCC11DD220E0D82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05BAB278AE1DD2FE446A29E18C1AED21 /* NFAppStoreUpdateNotifier.debug.xcconfig */;
+			baseConfigurationReference = D7F961B00BAD0C203D248B69A7208EFB /* NFAppStoreUpdateNotifier.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -667,10 +975,45 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		BC14C22FAE6687AAC78905EFB07F24CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4153404C4C0A47E701390CEDAB4A093 /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -739,6 +1082,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2EC648173E50E3BF345DDF3E3E415159 /* Build configuration list for PBXNativeTarget "NFAppStoreUpdateNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				770B16887B802CED46CB8CAA862027DE /* Debug */,
+				A8C6B36C67BE4EB09BCC11DD220E0D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -748,20 +1100,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6CA48F95D1BBD5B02F12D9CF6F4F8AD /* Build configuration list for PBXNativeTarget "Pods-NFAppStoreUpdateNotifier_Example" */ = {
+		78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				896A7655821D5461B64638FC95ACDE7A /* Debug */,
-				58CDFC138846144B5C0595C75746B8AC /* Release */,
+				2A25201E94E80EC7F4E0516B59ABBBE4 /* Debug */,
+				BC14C22FAE6687AAC78905EFB07F24CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D428A5A16EC068BD25D3BCFC9F4447B1 /* Build configuration list for PBXNativeTarget "NFAppStoreUpdateNotifier" */ = {
+		AB63A7B48F614E80A550691C0847A61D /* Build configuration list for PBXNativeTarget "Pods-NFAppStoreUpdateNotifier_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BCDC522DA1C4B2736222269EDAEB5BD /* Debug */,
-				06C3E6052F60C1A49270AFFF38D5AC3F /* Release */,
+				8C4395E305A28F373385FAD7BA8ADBE3 /* Debug */,
+				663C3BCC65ACB035A42940100E4E955D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

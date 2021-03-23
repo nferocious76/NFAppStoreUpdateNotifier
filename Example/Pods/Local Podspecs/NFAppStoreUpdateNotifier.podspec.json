@@ -16,7 +16,12 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "13.0"
   },
-  "source_files": "NFAppStoreUpdateNotifier/Classes/**/*"
+  "source_files": "NFAppStoreUpdateNotifier/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 5.2"
+    ]
+  }
 }
