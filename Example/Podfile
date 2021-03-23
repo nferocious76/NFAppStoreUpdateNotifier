@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'NFAppStoreUpdateNotifier_Example' do
+  pod 'NFAppStoreUpdateNotifier', :path => '../'
+
+  target 'NFAppStoreUpdateNotifier_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
