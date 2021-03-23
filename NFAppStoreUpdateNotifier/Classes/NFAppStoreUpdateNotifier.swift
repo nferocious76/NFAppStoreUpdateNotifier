@@ -19,7 +19,12 @@ public class NFAppStoreUpdateNotifier: NSObject {
     public var appStoreAppId: String = "id497799835" /// Xcod‪e‬ AppStore ID
     
     /// Last version checked
-    public var lastVersionChecked: String = "0.0.0"
+    public var lastVersionChecked: String {
+        return liveVersion
+    }
+    
+    /// Hold fetched live version
+    private var liveVersion: String = "0.0.0"
     
     private
     override init() {
@@ -60,7 +65,7 @@ extension NFAppStoreUpdateNotifier {
                         callback(false, error)
                         return }
                     
-                    self.lastVersionChecked = appStoreVersion as String
+                    self.liveVersion = appStoreVersion as String
                     let formattedVersion = appStoreVersion.replacingOccurrences(of: ".", with: "")
                     let formattedLocalVersion = locaVersion.replacingOccurrences(of: ".", with: "")
                     let appStoreVer = Int(formattedVersion) ?? 0
